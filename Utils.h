@@ -5,6 +5,12 @@ class Utils {
 
 public:
 
+	static void initVector(int v[], int n) {
+
+		for (int i = 0; i < n; i++)
+			v[i] = 0;
+	}
+
 	static void readMatrix(int m[6][6], int &n) {
 
 		std::ifstream in("matrix.txt");
